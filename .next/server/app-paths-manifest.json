@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/hakkinda/page": "app/hakkinda/page.js",
+  "/egitim/page": "app/egitim/page.js",
+  "/kayit/page": "app/kayit/page.js",
+  "/privacy/page": "app/privacy/page.js"
+}
