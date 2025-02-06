@@ -11,16 +11,16 @@ const features = [
     description: 'Referans, online eğitim ile dünyanın her yerinden ulaşılabilir akademik deneyim sunar.',
     icon: Code2,
     lightColors: {
-      bg: '#134c91',
-      iconBg: '#97e8f3',
-      icon: '#134c91',
-      name: '#134c91',
-      description: '#97e8f3'
+      bg: '#c2ddff',
+      iconBg: '#3076f6',
+      icon: '#ffffff',
+      name: '#ffffff',
+      description: '#000000'
     },
     darkColors: {
-      bg: '#281a16',
-      iconBg: '#131313',
-      text: '#ff4d00'
+      bg: '#14192a',
+      iconBg: '#0a0a0a',
+      text: '#c7c9cc'
     }
   },
   {
@@ -28,16 +28,16 @@ const features = [
     description: 'En güncel eğitim metotları ve öğrenme araçları, öğrencinin anlayarak öğrenmesini destekler.',
     icon: Cpu,
     lightColors: {
-      bg: '#25330f',
-      iconBg: '#d2e8b9',
-      icon: '#25330f',
-      name: '#25330f',
-      description: '#d2e8b9'
+      bg: '#ffe4c2',
+      iconBg: '#e89d19',
+      icon: '#ffffff',
+      name: '#ffffff',
+      description: '#000000'
     },
     darkColors: {
-      bg: '#212019',
-      iconBg: '#131313',
-      text: '#8e8768'
+      bg: '#14192a',
+      iconBg: '#0a0a0a',
+      text: '#c7c9cc'
     }
   },
   {
@@ -45,16 +45,16 @@ const features = [
     description: 'Sana özel kurgulanmış eğitim programlarıyla başarı hikâyen şekilleniyor.',
     icon: Shield,
     lightColors: {
-      bg: '#28293c',
-      iconBg: '#f5d4d2',
-      icon: '#28293c',
-      name: '#28293c',
-      description: '#f5d4d2'
+      bg: '#d5fdd6',
+      iconBg: '#19d163',
+      icon: '#ffffff',
+      name: '#ffffff',
+      description: '#000000'
     },
     darkColors: {
-      bg: '#311c31',
-      iconBg: '#131313',
-      text: '#fc73ff'
+      bg: '#14192a',
+      iconBg: '#0a0a0a',
+      text: '#c7c9cc'
     }
   },
 ];
@@ -71,18 +71,18 @@ const Content1 = () => {
     <div className="py-32 sm:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center mt-0">
-          <h2 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-semibold leading-7 text-primary">Ne öğrenmek istiyorsan</h2>
+          <h2 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-semibold leading-7 text-muted-foreground">Ne öğreniyorsan</h2>
           <p className="mt-2 sm:mt-4 text-[4.5rem] sm:text-7xl lg:text-8xl xl:text-[7rem] font-bold tracking-tight text-foreground leading-[0.9]">
             <span className="relative">
               Anlayarak
               <span 
-                className="absolute -left-8 -right-8 -bottom-1 sm:-bottom-2 -z-10 h-full bg-no-repeat bg-[length:100%_0.4em] bg-[center_bottom_0.1em] bg-contain"
-                style={{ backgroundImage: "url('/orange2-marker-line.svg')" }}
+                className="absolute -left-2 -right-2 -bottom-1 sm:-bottom-2 -z-10 h-full bg-no-repeat bg-[length:100%_0.4em] bg-[center_bottom_0.1em] bg-contain"
+                style={{ backgroundImage: "url('/green2-longmarker-02.svg')" }}
               />
             </span> öğren
           </p>
           <p className="mt-8 text-xl sm:text-xl lg:text-2xl leading-relaxed text-muted-foreground">
-            Modern öğrenme metotları ile öğrenmek artık çok kolay ve etkili
+            Modern öğrenme metotlarıyla öğrenmek artık çok kolay ve etkili
           </p>
         </div>
         <div className="mt-16 sm:mt-20">
@@ -104,14 +104,14 @@ const Content1 = () => {
                   >
                     <div className="flex items-center gap-2">
                       <feature.icon 
-                        className="h-8 w-8 stroke-[2.5]" 
+                        className="h-8 w-8 stroke-[2.0]" 
                         style={mounted ? {
                           color: theme === 'dark' ? feature.darkColors.text : feature.lightColors.icon,
                         } : undefined}
                         aria-hidden="true" 
                       />
                       <span 
-                        className="text-[19px] font-bold tracking-tight"
+                        className="text-[20px] font-extrabold tracking-tight"
                         style={mounted ? {
                           color: theme === 'dark' ? feature.darkColors.text : feature.lightColors.name,
                         } : undefined}
@@ -120,7 +120,7 @@ const Content1 = () => {
                   </div>
                 </dt>
                 <dd 
-                  className="mt-auto text-xl leading-7 font-medium"
+                  className="mt-auto text-xl leading-7 font-medium tracking-tight"
                   style={mounted ? {
                     color: theme === 'dark' ? feature.darkColors.text : feature.lightColors.description,
                   } : undefined}

@@ -1,12 +1,12 @@
 'use client';
 
-import { Check, Zap, Shield, Cloud, Cpu, Code2 } from 'lucide-react';
+import { Check, Zap, Shield, Cloud } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const features = [
   {
     name: 'Anlayarak Öğrenme',
-    description: 'Modern öğrenme metodları ile kalıcı öğrenme deneyimi.',
+    description: 'Modern öğrenme metotları ile kalıcı öğrenme deneyimi.',
     icon: Zap,
   },
   {
@@ -18,17 +18,7 @@ const features = [
     name: 'Her Yerden Erişim',
     description: 'Bulut tabanlı sistem ile istediğiniz yerden çalışma imkanı.',
     icon: Cloud,
-  },
-  {
-    name: 'Güncel İçerik',
-    description: 'Sürekli güncellenen ve zenginleştirilen eğitim materyalleri.',
-    icon: Code2,
-  },
-  {
-    name: 'Yapay Zeka Destekli',
-    description: 'Kişiselleştirilmiş öğrenme deneyimi için AI teknolojisi.',
-    icon: Cpu,
-  },
+  }
 ];
 
 const tiers = [
@@ -57,14 +47,66 @@ const tiers = [
 export default function Egitim() {
   return (
     <main className="py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+      <div className="mx-auto max-w-8xl px-8 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-            Eğitim
+            Eğitim Vizyonumuz
           </h1>
-          <p className="mt-6 text-xl leading-8 text-muted-foreground">
-            Modern öğrenme yöntemleri ve eğitim materyalleri ile kendinizi geliştirin.
+          <p className="mt-12 text-2xl leading-8 text-muted-foreground">
+          Referans ile eğitim neden farklı?<br />
           </p>
+          <div className="text-2xl mt-12 text-left">
+            <div className="font-serif">
+            <p>
+            Teknoloji, tarih boyunca eğitimi<span className="marker3">dönüştürdü.</span> Şimdi ise bu dönüşümlerin en büyüklerinden birine tanıklık ediyoruz.<br /><br />
+  </p>
+
+  <p>
+  Burada; ezbere dayalı öğrenme, sıkıcı müfredatlar veya katı programlara <span className="marker3"><strong>yer yok.</strong></span><br /><br />
+  </p>
+
+  <p>
+   <strong>Başarısı kanıtlanmış öğrenme metotları</strong> ve <strong>ileri teknoloji</strong>yi birleştirerek yalnızca ders içeriğini değil, öğrenmenin doğasını yeniden tanımlıyoruz.
+   <br /><br />
+  </p>
+
+  <p>
+    Eğitimi sil baştan tasarlayarak, <strong>üç temel bileşen</strong>den oluşan bir sistem geliştirdik:<br /><br />
+  </p>
+
+  <ul className="list-disc pl-5">
+    <li>
+    <span className="marker"><strong>Mentor </strong></span>– Öğrenciye, anlık rehberlik sağlayarak öğrenme sürecinde hiçbir zaman yalnız hissettirmeyen akademik danışman ve akran ortamı.<br /><br />
+    </li>
+    <li>
+    <span className="marker2"><strong>Dinamik Akademik Kadro</strong></span>– Her ders için istediği eğitmeni seçme özgürlüğü sunan, alanında uzman eğitimcilerden oluşan global bir kampüs.<br /><br />
+    </li>
+    <li>
+    <span className="marker"><strong>Analiz</strong></span> – Akademisyenler ve eğitimciler için eyleme yönelik istatistik tutarak, müfredat içeriğini ve öğrenci ilerlemesini dinamik bir şekilde takip eden öğrenme sistemi.<br /><br />
+    </li>
+  </ul>
+
+
+  <p>
+    İşte bu yüzden <strong>Referans</strong>, gerçek manada küresel ve tamamen dijital bir <span className="marker3">kampüs.</span>
+    <br /><br />
+    Ve biz, geleceğin <span className="marker3">bir numaralı</span> eğitim platformu olmaya kararlıyız.<br /><br />
+  </p>
+  </div>
+  <p>
+  <img src="/imza-ak.svg" alt="İmza" className="mt-4 w-[30rem]" />
+  </p>
+  <p className="text-lg mt-5">
+  <span className="font-bold">Prof. Dr. Abdurrahim Karslı</span><br />
+  
+    Hukukçu, eğitimci
+ 
+  </p>
+  <p className="text-sm mt-4">
+  <span className="font-bold">Eğitimin</span> geleceğine dair vizyonumuzu <span className="font-bold"><a href="/arastirma">“İlkelerimiz”</a></span> sayfasında okuyabilirsiniz.
+  </p>
+
+</div>
         </div>
 
         <div className="mx-auto mt-16 max-w-7xl px-6 lg:px-8">

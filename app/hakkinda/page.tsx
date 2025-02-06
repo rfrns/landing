@@ -30,11 +30,10 @@ export default function Hakkinda() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-            RFRNS Hakkında
+            İletişim
           </h1>
           <p className="mt-6 text-xl leading-8 text-muted-foreground">
-            Modern eğitim teknolojileri ve yenilikçi öğrenme yöntemleriyle
-            geleceğin eğitim sistemini inşa ediyoruz.
+          Sorularınız ve geri bildirimleriniz için bizimle iletişime geçebilirsiniz.
           </p>
         </div>
 

@@ -7,30 +7,25 @@ const tiers = [
   {
     name: 'Temel',
     id: 'tier-basic',
-    price: '₺299',
-    description: 'Bireysel öğrenciler için temel öğrenme paketi.',
+    price: '299₺',
+    description: 'Bireysel öğrenciler için temel öğrenme planı',
     features: [
       'Temel içeriklere erişim',
-      '5GB depolama alanı',
       'Temel destek',
-      'Temel analitikler',
-      'Proje yönetim araçları',
+      'Kampüs erişimi*',
     ],
     featured: false,
   },
   {
-    name: 'Premium',
+    name: 'Özel',
     id: 'tier-premium',
-    price: '₺599',
-    description: 'Gelişmiş özellikler ve özel destek ile tam öğrenme deneyimi.',
+    price: '599₺',
+    description: 'Gelişmiş özellikler ve kişisel destek ile yepyeni bir öğrenme deneyimi',
     features: [
       'Tüm içeriklere sınırsız erişim',
-      '50GB depolama alanı',
       'Öncelikli destek',
-      'Gelişmiş analitikler',
-      'Gelişmiş güvenlik',
-      'Özel alan adı',
-      'API erişimi',
+      'Kampüs+ erişimi**',
+      'İndirilebilir içerik',
     ],
     featured: true,
   },
@@ -38,15 +33,12 @@ const tiers = [
     name: 'Kurumsal',
     id: 'tier-enterprise',
     price: 'Özel',
-    description: 'Kurumlar için özelleştirilmiş çözümler.',
+    description: 'Kurumlar için özelleştirilmiş çözümler',
     features: [
       'Sınırsız kullanıcı',
-      'Sınırsız depolama',
       '7/24 özel destek',
       'Kurumsal analitikler',
-      'Gelişmiş güvenlik',
       'Özel entegrasyonlar',
-      'SLA garantisi',
       'Özel hesap yöneticisi',
     ],
     featured: false,
@@ -59,10 +51,10 @@ export default function Kayit() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-            Kayıt
+            Planlar ve Ücretlendirme
           </h1>
           <p className="mt-6 text-xl leading-8 text-muted-foreground">
-            İhtiyacınıza en uygun planı seçin ve öğrenmeye hemen başlayın.
+            İhtiyacına en uygun planı seç, <span className="marker2">öğrenmeye hemen başla.</span>
           </p>
         </div>
 
@@ -93,7 +85,7 @@ export default function Kayit() {
               </p>
               <Button
                 variant={tier.featured ? 'secondary' : 'default'}
-                className="mt-6 w-full"
+                className="mt-6 px-8 py-6 text-xl w-full font-semibold"
               >
                 Hemen Başla
               </Button>
@@ -107,6 +99,12 @@ export default function Kayit() {
               </ul>
             </div>
           ))}
+        </div>
+        <div className="mx-auto max-w-7xl text-left">
+          <p className="mt-8 text-sm leading-5 text-muted-foreground">
+            *   Kampüs erişimi sayesinde diğer öğrenciler ile iletişim kurabilirsiniz.<br />
+            ** Kampüs+ erişimi, eğitmen ve öğrenciler ile anlık iletişim kurmanızı sağlar.
+          </p>
         </div>
       </div>
     </main>

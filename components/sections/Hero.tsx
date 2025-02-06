@@ -33,28 +33,27 @@ const Hero = () => {
           fill
           priority
           className={cn(
-            "object-cover object-center transition-opacity duration-1000",
-            mounted ? "opacity-90" : "opacity-0"
+            "object-cover object-center",
+            mounted ? "opacity-100" : "opacity-0"
           )}
           quality={100}
           sizes="100vw"
         />
-        <div className={`absolute inset-0 bg-gradient-to-b transition-opacity duration-1000 ${gradientClass}`} />
       </div>
       <div className="mx-auto max-w-7xl px-6 w-full">
         <div className="relative z-10 mx-auto lg:mx-0 max-w-3xl text-center lg:text-left translate-y-8 sm:translate-y-0">
           <Button variant="secondary" className="rounded-full">
-            <span className="mr-2 text-lg">En Yeni Metodlar</span>
+            <span className="mr-2 text-lg">Yeni bir sen için</span>
             <ArrowRight className="h-4 w-4" />
           </Button>
           
-          <h1 className="mt-6 sm:mt-8 text-5xl font-bold tracking-tight text-foreground sm:text-7xl lg:text-8xl">
-            Yeni bir karar...
+          <h1 className="mt-6 sm:mt-8 text-6xl font-black tracking-tight sm:text-7xl lg:text-8xl">
+            Yeni bir karar.
           </h1>
           
           <p className="mt-6 sm:mt-8 text-xl sm:text-2xl leading-relaxed text-muted-foreground">
-            Hayatınızda iyileştirmeler yapmak veya faydalı bilgilerle kendinizi ödüllendirmek istiyorsanız,
-            referansınız olabiliriz.
+            Hayatını iyileştir, kendini geliştir. İspatlanmış metotlarla<br />
+            geleceğin eğitimine<span className="marker"> şimdi başla.</span>
           </p>
           
           <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center lg:items-start lg:justify-start justify-center gap-4 sm:gap-x-8">
@@ -64,11 +63,15 @@ const Hero = () => {
               asChild
             >
               <a href="https://apps.edu.rfrns.com/authn/register?next=%2F">
-                Ücretsiz Kayıt Ol
+                Ücretsiz Hesap Aç
               </a>
             </Button>
-            <Button variant="ghost" size="lg" className="text-xl px-8 py-6 w-full sm:w-auto">
-              Daha fazla bilgi al <ArrowRight className="ml-2 h-4 w-4" />
+            <Button
+            variant="ghost"
+            size="lg"
+            className="text-xl px-8 py-6 w-full sm:w-auto"
+            onClick={() => window.location.href = '/egitim'}>
+              Eğitim vizyonumuz <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </div>

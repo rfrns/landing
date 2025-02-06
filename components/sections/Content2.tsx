@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const features = [
-  'Hedefini belirle',
+  'Programını seç',
   'Planını yap',
   'Kendi hızında öğren',
 ];
@@ -17,11 +17,11 @@ const Content2 = () => {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-xl font-semibold leading-7 text-primary">UbD ve TfU metodları ile</h2>
-              <p className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-                Kolayca öğren
+              <p className="mt-4 text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-5xl">
+                Öğren, anla, uygula.
               </p>
               <p className="mt-8 text-xl sm:text-2xl leading-relaxed text-muted-foreground">
-                En güncel öğrenme yöntemleriyle, anlayarak öğren uygulamada başarıyı yakala
+                Kanıtlanmış modern eğitim metotlarıyla anlayarak öğren, hayatında uygula.
               </p>
               <dl className="mt-12 max-w-xl space-y-6 text-lg leading-relaxed text-muted-foreground lg:max-w-none">
                 {features.map((feature) => (
@@ -35,7 +35,7 @@ const Content2 = () => {
               </dl>
               <div className="mt-12">
                 <Button className="text-xl px-8 py-6">
-                  Nasıl mı? <ArrowRight className="ml-2 h-4 w-4" />
+                  Ücretsiz Hesap Aç<ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </div>

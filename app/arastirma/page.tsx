@@ -4,55 +4,40 @@ import { Users2, Target, Heart } from 'lucide-react';
 
 const values = [
   {
-    name: 'Öğrenci Odaklı',
+    name: 'Mentor',
     description:
-      'Öğrencilerimizin başarısı bizim önceliğimizdir. Her adımda onların yanındayız.',
+      'Öğrenciye, anlık rehberlik sağlayarak öğrenme sürecinde desteğini hissettiren akademik danışman ve öğrenci ortamı.',
     icon: Heart,
   },
   {
-    name: 'Yenilikçi',
+    name: 'Dinamik Akademik Kadro',
     description:
-      'Sürekli gelişen eğitim teknolojilerini takip eder ve en iyi çözümleri sunarız.',
+      'Her ders için istediği eğitmeni seçme özgürlüğü sunan, alanında uzman eğitimcilerden oluşan global bir kampüs.',
     icon: Target,
   },
   {
-    name: 'Takım Çalışması',
+    name: 'Analiz',
     description:
-      'Birlikte öğrenmenin ve paylaşmanın gücüne inanıyoruz.',
+      'Eğitimciler için istatistik tutarak, müfredat içeriğini ve öğrenci ilerleyişini dinamik bir şekilde takip eden öğrenim sistemi.',
     icon: Users2,
   },
 ];
 
 const team = [
   {
-    name: 'Prof. Dr. Halim Ulaş',
-    role: 'Eğitim Direktörü',
-    image: '/pp/prof-dr-halim-ulas.jpg',
+    name: 'TechLab',
+    role: 'Teknoloji ve Yazılım Kulübü',
+    image: 'RU-referans-tech-lab.jpg',
   },
   {
-    name: 'Doç. Dr. Ahmet Kavlak',
-    role: 'Felsefe, Mantık ve Kavramlar',
-    image: '/pp/doc-dr-ahmet-kavlak.jpg',
+    name: 'EdLab',
+    role: 'Eğitim Metotları Laboratuvarı',
+    image: 'RU-referans-edu-lab.jpg',
   },
   {
-    name: 'Doç. Dr. Kasım Takım',
-    role: 'Müfredat Uzmanı',
-    image: '/pp/doc-dr-kasim-takim.jpg',
-  },
-  {
-    name: 'Dr. Zeynep Arslan',
-    role: 'Öğretim Tasarımcısı',
-    image: '/pp/prof-dr-halim-ulas.jpg',
-  },
-  {
-    name: 'Doç. Dr. Can Özkan',
-    role: 'Veri Analisti',
-    image: '/pp/prof-dr-halim-ulas.jpg',
-  },
-  {
-    name: 'Dr. Elif Yıldız',
-    role: 'Pedagoji Uzmanı',
-    image: '/pp/prof-dr-halim-ulas.jpg',
+    name: 'İşe Yerleştirme',
+    role: 'Yakında...',
+    image: 'RU-referans-is-work.jpg',
   },
 ];
 
@@ -62,7 +47,7 @@ export default function Arastirma() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-            Araştırma
+            İlkelerimiz
           </h1>
           <p className="mt-6 text-xl leading-8 text-muted-foreground">
             Eğitim teknolojileri ve öğrenme yöntemleri üzerine yaptığımız araştırmalarla
@@ -70,7 +55,7 @@ export default function Arastirma() {
           </p>
         </div>
 
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {values.map((value) => (
               <div key={value.name} className="flex flex-col">
@@ -94,10 +79,10 @@ export default function Arastirma() {
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Akademik Kadro
+              Kulüpler ve Laboratuvarlar
             </h2>
             <p className="mt-6 text-xl leading-8 text-muted-foreground">
-              Alanında uzman akademisyenlerimiz ve araştırmacılarımızla eğitimde fark yaratıyoruz.
+              Ortak ilgi alanlarınız için buluşma noktanız
             </p>
           </div>
           <ul className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">

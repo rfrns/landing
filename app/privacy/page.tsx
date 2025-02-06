@@ -90,16 +90,21 @@ export default function Privacy() {
 
             <section className="mt-16">
               <p className="text-xl font-bold mb-8">
-                <strong>Yürürlük Tarihi:</strong> 01.01.2025
-              </p>
+                <strong>Yürürlük Tarihi:</strong> 01.02.2025
+              </p><br />
+
+              <div className="text-4xl">
+              <p className="font-bold mb-8"><strong>Referans, Inc.</strong></p>
+              </div>
 
               <div className="text-xl text-muted-foreground">
-                <p className="font-bold mb-4"><strong>Referans, Inc.</strong></p>
-                <p>Adres: 651 N Broad St, Suite 201, Middletown, Delaware 19709, ABD</p>
-                <p>E-posta: <strong>info@rfrns.com</strong></p>
-                <p>Türkiye İletişim Adresi: Üçer Sk. No:13, Üsküdar, İstanbul</p>
-                <p>Telefon: <strong>+90 216 545 6969</strong></p>
-                <p>E-posta: <strong>destek@rfrns.com</strong></p>
+              <p className="font-bold mb-4">Kuzey Amerika, Avrupa ve Avustralya</p>
+                <p><strong>Adres:</strong> 651 N Broad St, Suite 201, Middletown, Delaware 19709, USA</p>
+                <p><strong>E-posta:</strong> info@rfrns.com</p><br /><br />
+                <p className="font-bold mb-4">Ortadoğu, Afrika ve Asya: </p>
+                <p><strong>Adres:</strong> Üçer Sk. No:13, Üsküdar, İstanbul</p>
+                <p><strong>E-posta:</strong> destek@rfrns.com</p>
+                <p><strong>Telefon:</strong> +90 216 545 6969</p>
               </div>
             </section>
           </div>
