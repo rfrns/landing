@@ -5,7 +5,7 @@ services:
     build: .
     working_dir: /app
     container_name: rfrns_landing
-    image: node:22.14.0
+    image: node:20.9.0
     volumes:
       - .:/app
       - ./node_modules:/app/node_modules:delegated
