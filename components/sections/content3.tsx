@@ -90,7 +90,9 @@ const Content3 = () => {
             {sections.map((section, index) => (
               <div
                 key={section.id}
-                ref={el => sectionRefs.current[index] = el}
+                ref={(el) => {
+                  sectionRefs.current[index] = el;
+                }}
                 className="min-h-[80vh] flex items-center"
               >
                 <div>

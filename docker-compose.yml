@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  landing:
+    working_dir: /app
+    container_name: rfrns_landing
+    image: node:20.9.0
+    volumes:
+      - .:/app
+      - ./node_modules:/app/node_modules:delegated
+    networks:
+      - default
+    command: bash -c "npm install && npm run build:worker"

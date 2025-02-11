@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  landing:
+    build: .
+    working_dir: /app
+    container_name: rfrns_landing
+    image: node:22.14.0
+    volumes:
+      - .:/app
+      - ./node_modules:/app/node_modules:delegated
+    networks:
+      - default
+    environment:
+      - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN}
+      - CLOUDFLARE_ACCOUNT_ID=${CLOUDFLARE_ACCOUNT_ID}
+    command: bash -c "npm install && npm run build"
